@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="overlay">
+    <h1>Hello world!!!</h1>
+    <div class="instruction">
+        <p class="instruction-text">
+            This countdown timer currently shows the no of days, hours, minutes and seconds left until January 1st 2023.
+            To get the amount of time left until a certain date, type in that date in the input box below using this format 
+            <em>"1 Jan 2023"</em>,  then hit 'enter'.
+        </p>
+
+        <input id="search" type="search" autofocus placeholder="Enter a date using the specified format">
+    </div>
+    <div class="container">
+        <div class="countdown days-text">
+            <p class="big" id="days">0</p>
+            <span>days</span>
+        </div>
+        <div class="countdown hours-text">
+            <p class="big" id="hours">0</p>
+            <span>hours</span>
+        </div>
+        <div class="countdown minutes-text">
+            <p class="big" id="minutes">0</p>
+            <span>mins</span>
+        </div>
+        <div class="countdown seconds-text">
+            <p class="big" id="seconds">0</p>
+            <span>seconds</span>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
