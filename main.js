@@ -20,10 +20,10 @@ function countDown () {
     const minutes = Math.floor( timeLeft / 60) % 60
     const seconds = Math.floor(timeLeft) % 60
 
-    daysOutput.innerHTML = days
-    hoursOutput.innerHTML = hours
-    minsOutput.innerHTML = minutes
-    secsOutput.innerHTML = seconds
+    daysOutput.innerHTML = formatTime(days)
+    hoursOutput.innerHTML = formatTime(hours)
+    minsOutput.innerHTML = formatTime(minutes)
+    secsOutput.innerHTML = formatTime(seconds)
 }
 
 function getTime (input) {
@@ -37,10 +37,14 @@ function getTime (input) {
     const minutes = Math.floor( timeLeft / 60) % 60
     const seconds = Math.floor(timeLeft) % 60
 
-    daysOutput.innerHTML = days
-    hoursOutput.innerHTML = hours
-    minsOutput.innerHTML = minutes
-    secsOutput.innerHTML = seconds
+    daysOutput.innerHTML = formatTime(days)
+    hoursOutput.innerHTML = formatTime(hours)
+    minsOutput.innerHTML = formatTime(minutes)
+    secsOutput.innerHTML = formatTime(seconds)
+}
+
+function formatTime(time){
+    return time < 10 ? `0${time}` : time
 }
 
 
